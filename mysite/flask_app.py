@@ -106,7 +106,7 @@ def add_new_visit():
         endTime = data["endTime"],
         clicked = data["clicked"],
         converted = data["converted"],
-        inboundLink = data["inboundLink"]
+        inboundLink = data["referrer"]
     )
     db.session.add(new_visit)
     db.session.commit()
